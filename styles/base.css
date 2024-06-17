@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: steelblue;
+    grid-column: 1 / 3;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: Reddit Mono, monospace;
+}
+
+Nav {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: black;
+
+}
+
+Nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}    
+
+nav a:hover {
+    color: lightcoral;
+}
+
+Main {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-top: -1rem;
+    border: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-family: Reddit Mono, monospace;
+}
+
+
+.Main-1, .Main-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main-1 p {
+    float: left;
+}
+
+.Main-1 img {
+    width: 100px;
+    height: 150px;
+}
+
+.city-title {
+    color: Black;
+    text-align: center;
+    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.Main-2 img{
+    width: 150px;
+    height: auto;
+    border: .5px solid black
+}
+
+.Main-2 p {
+    float: right;
+}
+
+figcaption {
+    text-align: center;
+}
+
+p {
+    font-family: Roboto slab, monospace;
+}
+
+.WebDev {
+    grid-column: 2 / 2;
+    text-align: center;
+    justify-content: space-around;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: black;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: lightyellow;
+    grid-column: 1 / 3;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+}
