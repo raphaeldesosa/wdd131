@@ -1,13 +1,14 @@
 const input = document.querySelector('#favechap');
 const button = document.querySelector('button');
-const list = document.querySelector('list');
+const list = document.querySelector('#list');
 
-button.addEventListener('click', addchapter);
+button.addEventListener('click', addChapter);
 
-function addchapter() {
+function addChapter() {
     if (input.value.trim() !=='') {
         const li = document.createElement('li');
         li.textContent = input.value;
+        
         const deletebutton = document.createElement('button');
         deletebutton.textContent = '❌';
         li.append(deletebutton);
@@ -16,7 +17,7 @@ function addchapter() {
                 list.removeChild(li);
                 input.focus()
             };  
-        list.append(li);
+        list.appendChild(li);
         input.value = '';
         input.focus();  
     }
