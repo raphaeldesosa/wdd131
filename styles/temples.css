@@ -41,6 +41,12 @@ main {
     grid-gap: 1rem;
 }
 
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 figcaption {
     text-align: center;
     font-family: Roboto, sans-serif;
