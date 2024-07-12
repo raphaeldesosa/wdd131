@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Philippines page</title>
+    <meta name="description" content="A country page">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+        <hr>
+    </header>
+    <main>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 300,000 sq km</li>
+                <li>Population: 119,107,490</li>
+                <li>Capital: Manila</li>
+                <li>Languages: Around 170 langauges is used but most common is Tagalog</li>
+                <li>Currency: Philippine Peso</li>
+                <li>Timezone: UTC + 8</li>
+                <li>Calling Code: +63</li>
+                <li>Internet TLD: .ph</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h3>Weather ⛅</h3>
+            <ul>
+                <li>Temperature: 29&deg;</li>
+                <li>Conditions: Mostly Cloudy</li>
+                <li>Wind: 11km/h</li>
+                <li>Wind Chill: <span id="windchill"></span>&deg;</li>
+            </ul>
+        </section>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small1.webp" alt="Philippine Eagle">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Raphael De Sosa | Philippines</p>
+        <p>Last Modification:  <span id=lastModified>Mon June 17</span></p>
+    </footer>
+    
+</body>
+</html>
