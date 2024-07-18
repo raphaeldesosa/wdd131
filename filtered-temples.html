@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Picture Album</title>
+        <meta name="description" content="A picture temple album">
+        <meta name="author" content="Raphael De Sosa">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temple.css">
+        <link rel="stylesheet" href="styles/filtered-temple-large.css">
+        <script src="scripts/filtered-temple.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <button id="hamburger" aria-label="toggle menu">☰</button>
+                <nav id="nav-menu"  class="nav-menu">
+                    <a href="#"id=all>Home</a>
+                    <a href="#"id=old>Old</a>
+                    <a href="#"id=new>New</a>
+                    <a href="#"id=large>Large</a>
+                    <a href="#" id="small">Small</a>
+                </nav>
+        </header>
+        <main>
+            <div id="temple-container"></div>
+            
+        </main> 
+        <footer>
+            <p>©<span id="currentyear"></span> | Raphael De Sosa | Philippines</p>
+            <p>Last Modification:  <span id=lastModified>Mon June 17</span></p>
+        </footer>
+    </body>
+</html>

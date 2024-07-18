@@ -1,0 +1,61 @@
+@media screen and (min-width: 500px) {
+    body {
+        margin: 0 auto;
+       
+    }
+    
+    header {
+        background-color: steelblue;
+        text-align: center;
+        padding-top: 1rem;
+        font-family: Roboto, sans-serif;
+    }
+    
+    Nav {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+        padding: 1rem;
+        background-color: black;
+    }
+    
+    Nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    
+    }    
+    
+    nav a:hover {
+        color: lightcoral;
+    }
+    
+    main{
+        display: grid;
+        gap: 20px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #temple-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2, p{
+        text-align: center;
+    }
+
+  
+  
+    
+    footer {
+        background-color: lightyellow;
+        padding: 1rem;
+        text-align: center;
+        width: auto;
+    }
+}    
