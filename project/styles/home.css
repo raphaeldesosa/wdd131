@@ -163,6 +163,7 @@
 
     .about h2, .about p {
         color: var(--secondary-color);
+        text-align: center;
     }
 
    
