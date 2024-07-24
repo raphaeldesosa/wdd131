@@ -157,11 +157,22 @@
         margin: 10px 0;
     }
 
-    .hero p, .about h2 p {
+    .hero p {
+        color: var(--secondary-color);
+    }
+
+    .about h2, .about p {
         color: var(--secondary-color);
     }
 
    
+         /************************************************************
+**************
+*
+*                 Rules For Services Page
+*
+*************************************************************
+***************/ 
 
 
     main {
