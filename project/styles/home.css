@@ -189,6 +189,11 @@
         padding: 0;
     }
 
+    #imageContainer h2, p{
+        text-align: center;
+        color: var(--secondary-color);
+    }
+
     .service-card {
         width: 90%;
         max-width: 300px;
