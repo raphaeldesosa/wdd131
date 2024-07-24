@@ -157,6 +157,12 @@
         margin: 10px 0;
     }
 
+    .hero p, .about h2 p {
+        color: var(--secondary-color);
+    }
+
+   
+
 
     main {
         display: flex;
