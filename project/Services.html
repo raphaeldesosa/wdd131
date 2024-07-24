@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LK Dental Haven - Services</title>
+    <meta name="description" content="Services page for LK Dental Haven">
+    <meta name="author" content="Raphael De Sosa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/dental-logo.jpg" class="logo1" alt="dental-logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="Services.html">Services</a>
+        </nav>
+    </header>
+    <main>
+        <div id="services">
+            <h1>OUR SERVICES</h1>
+            <div id="imageContainer"></div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Schedule your first visit</h2>
+            <p>As a fee-for-service practice, we offer easy payment plans fit your budget. We’re also happy to submit insurance claims on your behalf.</p>
+            <button id="schedule-visit-button">Schedule Your Visit</button>
+            <input type="date" id="visit-date" style="display:none;">
+        </div>
+
+        <div id="client-information">
+            <h2>Client Information</h2>
+            <form id="client-form">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Send Review</button>    
+            </form>
+            <div id="reviews">
+                <h3>Reviews</h3>
+                <ul id="review-list"></ul>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Raphael De Sosa | Philippines</p>
+        <p>Last Modification:  <span id=lastModified>Mon June 17</span></p>
+    </footer>
+</body>
+</html>

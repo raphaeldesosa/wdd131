@@ -1,0 +1,332 @@
+:root {
+
+    /************************************************************
+    **************
+    *
+    *                             Variables
+    *
+    *************************************************************
+    ***************/    
+        --primary-color: #ffc56e;
+        --secondary-color: #533181;
+        
+    
+        --heading-font: 'DM Serif Display', 'serif';
+        --paragraph-font: 'roboto slab', 'serif';
+        
+        --nav-background-color: #D8E2DC;
+        --nav-link-color: steelblue;
+        --nav-hover-link-color: #413C58;
+        --nav-hover-background-color: #FED766; 
+}    
+
+
+
+@media screen and (min-width: 500px) {
+    body {
+        margin: 0 auto;
+       
+    }
+
+    /************************************************************
+**************
+*
+*                 Header Area
+*
+*************************************************************
+***************/ 
+    
+    nav {
+        display: flex;
+        flex: 1 1 100%;
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: xx-large;
+        justify-content: space-evenly;
+        text-align: right;
+        
+    }
+
+    header {
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    nav a{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+
+    nav a:hover {
+        color: var(--primary-color);
+    }
+
+    /************************************************************
+**************
+*
+*                 Rules For Home Page
+*
+*************************************************************
+***************/ 
+
+    main h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--secondary-color);
+        font-size: xx-large;
+    }
+
+    .cta-section {
+        background-color: #e8f4fd;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-section h2 {
+        font-size: 24px;
+        color: #0a2540;
+        margin-bottom: 10px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+        color: #4f4f4f;
+        margin-bottom: 20px;
+    }
+    
+    .cta-section button {
+        background-color: #ffffff;
+        border: 2px solid #0a2540;
+        border-radius: 4px;
+        padding: 10px 20px;
+        color: #0a2540;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-section button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    footer  {
+        background-color: #3d2461;
+        padding: 1rem;
+        text-align: center;
+        width: auto;
+        color: var(--primary-color);
+    }
+
+    footer p {
+        color: var(--primary-color)
+    }
+
+
+    /************************************************************
+**************
+*
+*                 Rules For About Us Page
+*
+*************************************************************
+***************/ 
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+    .hero h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1100px;
+        font-size: 40px;
+    }
+
+    .hero p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: var(--secondary-color);
+        top: 1150px;
+        font-size: 30px;
+    }
+
+    .about h2  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: var(--secondary-color);
+        top: 1900px;
+        right: 630px;
+        font-size: 50px;
+
+    }
+
+    .about p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: var(--secondary-color);
+        top: 2000px;
+        right: 10px;
+        font-size: 30px;
+
+    }
+
+    .contact {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #f7f7f7;
+        margin-top: 40px;
+        left: 200px;
+        top: 2150px;
+    }
+
+    .contact-info {
+        flex: 1;
+        padding: 20px;
+    }
+    .contact-info h4 {
+        margin-bottom: 10px;
+    }
+    .contact-info p {
+        margin: 5px 0;
+        text-align: start;
+    }
+    .map {
+        flex: 1;
+        position: absolute;
+        top: 2140px;
+        right: 400px;
+        padding: 20px;
+    }
+
+    .map h3 {
+        text-align: center;
+    }
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+    }
+
+        /************************************************************
+**************
+*
+*                 Rules For Services Page
+*
+*************************************************************
+***************/ 
+
+    main {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+   }
+
+    #imageContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    
+    }
+
+    #imageContainer h2, p{
+        text-align: center;
+        color: var(--secondary-color);
+    }
+
+
+    #client-information {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+     margin: 20px auto;
+    }
+
+    #client-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #client-form label {
+        font-weight: bold;
+    }
+
+    #client-form input,
+    #client-form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #client-form button {
+        background-color: #ffffff;
+        border: 2px solid #0a2540;
+        border-radius: 4px;
+        padding: 10px 20px;
+        color: #0a2540;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;     
+    }
+
+    #client-form button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    #reviews {
+        margin-top: 20px;
+    }
+
+    #reviews h3 {
+        color: var(--secondary-color);
+    }
+
+    #review-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #review-list li {
+        background-color: #e8f4fd;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    
+
+
+
+}    

@@ -1,0 +1,195 @@
+:root {
+
+    /************************************************************
+    **************
+    *
+    *                             Variables
+    *
+    *************************************************************
+    ***************/    
+        --primary-color: #ffc56e;
+        --secondary-color: #533181;
+        
+    
+        --heading-font: 'DM Serif Display', 'serif';
+        --paragraph-font: 'roboto slab', 'serif';
+        
+        --nav-background-color: #D8E2DC;
+        --nav-link-color: steelblue;
+        --nav-hover-link-color: #413C58;
+        --nav-hover-background-color: #FED766; 
+}    
+
+/* Styles for small screens */
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    header {
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 0;
+    }
+
+    nav a:hover {
+        color: var(--primary-color);
+    }
+
+    main h1 {
+        color: var(--secondary-color);
+        font-size: large;
+        text-align: center;
+    }
+
+    .cta-section {
+        background-color: #e8f4fd;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-section h2 {
+        font-size: 20px;
+        color: #0a2540;
+        margin-bottom: 10px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        color: #4f4f4f;
+        margin-bottom: 15px;
+    }
+
+    .cta-section button {
+        background-color: #ffffff;
+        border: 2px solid #0a2540;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: #0a2540;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-section button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    footer {
+        background-color: #3d2461;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        color: var(--primary-color);
+    }
+
+    footer p {
+        color: var(--primary-color);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    #imageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #client-information {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #client-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #client-form label {
+        font-weight: bold;
+    }
+
+    #client-form input,
+    #client-form textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    #client-form button {
+        background-color: #ffffff;
+        border: 2px solid #0a2540;
+        border-radius: 4px;
+        padding: 10px;
+        color: #0a2540;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;     
+    }
+
+    #client-form button:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    #reviews {
+        margin-top: 15px;
+    }
+
+    #reviews h3 {
+        color: var(--secondary-color);
+        font-size: 18px;
+    }
+
+    #review-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #review-list li {
+        background-color: #e8f4fd;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+}
