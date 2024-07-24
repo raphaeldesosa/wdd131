@@ -34,6 +34,12 @@
         padding: 1em 0;
     }
 
+    .logo1 {
+        max-width: 100%; /* Ensure the image scales down with the screen */
+        height: auto;    /* Maintain the aspect ratio */
+        width: 150px; 
+    }
+
     nav {
         display: flex;
         flex-direction: column;
